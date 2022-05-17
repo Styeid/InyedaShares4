@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/icbaa"
+        android:title="@string/TIT_BAA"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/icbba"
+        android:title="@string/TIT_BBA"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/icbca"
+        android:title="@string/TIT_BCA"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/icbda"
+        android:title="@string/TIT_BDA"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/icbea"
+        android:title="@string/TIT_BEA"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/iclogout"
+        android:title="@string/ICN_Logout" />
+</menu>

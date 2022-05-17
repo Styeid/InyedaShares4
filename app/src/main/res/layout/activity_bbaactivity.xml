@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screenbba"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BBAconstcolor"
+    tools:context=".BBAActivity">
+
+    <ImageView
+        android:id="@+id/ivbackgroundbba"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/hexabackgbh"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="-430dp" />
+
+    <TextView
+        android:id="@+id/tvuserbba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:fontFamily="@font/vt323"
+        android:textColor="@color/TRs_BtnTxtColor"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        tools:text="@string/TV_Username" />
+
+    <TextView
+        android:id="@+id/tvtodaybba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:fontFamily="@font/vt323"
+        android:textAlignment="textEnd"
+        android:textColor="@color/TRs_BtnTxtColor"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/TV_Date01" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvbba"
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:layout_margin="7dp"
+            android:background="@color/TRs_Total">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:layout_marginBottom="444dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvnamezbba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@color/BBAtranscolor"
+                android:fontFamily="@font/vt323"
+                android:hint="@string/TIT_Name"
+                android:textAlignment="center"
+                android:textColor="@color/TRs_BtnTxtColor"
+                android:textColorHint="@color/TRs_BtnTxtColor"
+                android:textSize="24sp"
+                tools:text="@string/TIT_Name" />
+
+            <TextView
+                android:id="@+id/tvinlayzbba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@color/BBAtranscolor"
+                android:fontFamily="@font/vt323"
+                android:hint="@string/TIT_Inlay"
+                android:textAlignment="center"
+                android:textColor="@color/TRs_BtnTxtColor"
+                android:textColorHint="@color/TRs_BtnTxtColor"
+                android:textSize="24sp"
+                tools:text="@string/TIT_Inlay" />
+
+            <TextView
+                android:id="@+id/tvcoursezbba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@color/BBAtranscolor"
+                android:fontFamily="@font/vt323"
+                android:hint="@string/TIT_Course"
+                android:textAlignment="center"
+                android:textColor="@color/TRs_BtnTxtColor"
+                android:textColorHint="@color/TRs_BtnTxtColor"
+                android:textSize="24sp"
+                tools:text="@string/TIT_Course" />
+
+            <TextView
+                android:id="@+id/tvpartyzbba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@color/BBAtranscolor"
+                android:fontFamily="@font/vt323"
+                android:hint="@string/TIT_Partys"
+                android:textAlignment="center"
+                android:textColor="@color/TRs_BtnTxtColor"
+                android:textColorHint="@color/TRs_BtnTxtColor"
+                android:textSize="24sp"
+                tools:text="@string/TIT_Partys" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/BBAtranscolor"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etnamezbba4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/TRs_BackGColor3"
+                    android:ems="10"
+                    android:fontFamily="@font/vt323"
+                    android:hint="@string/TIT_CName"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/TRs_BtnTxtColor"
+                    android:textColorHint="@color/TRs_BtnTxtColor"
+                    android:textSize="24sp"
+                    tools:text="@string/TIT_CName" />
+
+                <EditText
+                    android:id="@+id/etinlayzbba"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/TRs_BackGColor3"
+                    android:ems="10"
+                    android:fontFamily="@font/vt323"
+                    android:hint="@string/TIT_CInlay"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/TRs_BtnTxtColor"
+                    android:textColorHint="@color/TRs_BtnTxtColor"
+                    android:textSize="24sp"
+                    tools:text="@string/TIT_CInlay" />
+
+                <EditText
+                    android:id="@+id/etcoursezbba"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/TRs_BackGColor3"
+                    android:ems="10"
+                    android:fontFamily="@font/vt323"
+                    android:hint="@string/TIT_CCourse"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/TRs_BtnTxtColor"
+                    android:textColorHint="@color/TRs_BtnTxtColor"
+                    android:textSize="24sp"
+                    tools:text="@string/TIT_CCourse" />
+
+                <EditText
+                    android:id="@+id/etpartyzbba"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/TRs_BackGColor3"
+                    android:ems="10"
+                    android:fontFamily="@font/vt323"
+                    android:hint="@string/TIT_CPartys"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/TRs_BtnTxtColor"
+                    android:textColorHint="@color/TRs_BtnTxtColor"
+                    android:textSize="24sp"
+                    tools:text="@string/TIT_CPartys" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvmultigrowzbba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@color/BBAtranscolor"
+                android:fontFamily="@font/vt323"
+                android:hint="@string/TIT_Multigrow"
+                android:textAlignment="center"
+                android:textColor="@color/TRs_BtnTxtColor"
+                android:textColorHint="@color/TRs_BtnTxtColor"
+                android:textSize="24sp"
+                tools:text="@string/TIT_Multigrow" />
+
+            <TextView
+                android:id="@+id/tvvaluezbba2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@color/BBAtranscolor"
+                android:fontFamily="@font/vt323"
+                android:hint="@string/TIT_Multiperc"
+                android:textAlignment="center"
+                android:textColor="@color/TRs_BtnTxtColor"
+                android:textColorHint="@color/TRs_BtnTxtColor"
+                android:textSize="24sp"
+                tools:text="@string/TIT_Multiperc" />
+
+            <TextView
+                android:id="@+id/tvinlayzbba2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@color/BBAtranscolor"
+                android:fontFamily="@font/vt323"
+                android:hint="@string/TIT_Totalgrow"
+                android:textAlignment="center"
+                android:textColor="@color/TRs_BtnTxtColor"
+                android:textColorHint="@color/TRs_BtnTxtColor"
+                android:textSize="24sp"
+                tools:text="@string/TIT_Totalgrow" />
+
+            <TextView
+                android:id="@+id/tvnamezbba3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@color/BBAtranscolor"
+                android:fontFamily="@font/vt323"
+                android:hint="@string/TIT_Totalperc"
+                android:textAlignment="center"
+                android:textColor="@color/TRs_BtnTxtColor"
+                android:textColorHint="@color/TRs_BtnTxtColor"
+                android:textSize="24sp"
+                tools:text="@string/TIT_Totalperc" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">InYeDa</string>
+    <!--AAAloginActivity-->
+    <string name="ET_Email">Email</string>
+    <string name="ET_Password">Password</string>
+    <string name="BTN_Login">Login</string>
+    <string name="ICN_Logout">Logout</string>
+    <string name="TV_Date01">Date</string>
+    <!--BAAHomepageActivity-->
+    <!--Block_BAA-->
+    <string name="TV_Username">User</string>
+    <string name="TIT_Value">Value</string>
+    <string name="TIT_Date">Date</string>
+    <string name="TIT_Profit_D">Profit_D</string>
+    <string name="TIT_Profit_T">Profit_T</string>
+    <string name="TIT_DailyPerc">Daily_%</string>
+    <string name="TIT_TotalPerc">Total_%</string>
+    <!--Block_BBA/BCA/BDA/BEA-->
+    <string name="TIT_Name">Name</string>
+    <string name="TIT_Inlay">Inlay</string>
+    <string name="TIT_Course">Course</string>
+    <string name="TIT_Partys">Partys</string>
+    <string name="TIT_Multigrow">Multigrow</string>
+    <string name="TIT_Multiperc">Multiperc</string>
+    <string name="TIT_Totalgrow">Totalgrow</string>
+    <string name="TIT_Totalperc">Totalperc</string>
+    <string name="TIT_CName">Change Name</string>
+    <string name="TIT_CInlay">Change inlay</string>
+    <string name="TIT_CCourse">Change course</string>
+    <string name="TIT_CPartys">Change partys</string>
+    <string name="TIT_CMount">Mount</string>
+    <!--Toolbar_Options-->
+    <string name="TIT_BAA">BAA</string>
+    <string name="TIT_BBA">BBA</string>
+    <string name="TIT_BCA">BCA</string>
+    <string name="TIT_BDA">BDA</string>
+    <string name="TIT_BEA">BEA</string>
+</resources>

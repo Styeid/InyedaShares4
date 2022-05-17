@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    app:cardBackgroundColor="@color/TRs_Total">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/TRs_Total"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/TRs_Total"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvdatebaa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/TRs_BackGColor2"
+                android:fontFamily="@font/vt323"
+                android:hint="@string/TIT_Date"
+                android:textAlignment="center"
+                android:textColor="@color/TRs_BtnTxtColor"
+                android:textSize="20sp"
+                tools:text="@string/TIT_Date" />
+
+            <TextView
+                android:id="@+id/tvvaluebaa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/TRs_BackGColor2"
+                android:fontFamily="@font/vt323"
+                android:hint="@string/TIT_Value"
+                android:textAlignment="center"
+                android:textColor="@color/TRs_BtnTxtColor"
+                android:textSize="20sp"
+                tools:text="@string/TIT_Value" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvprofitdbaa"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/TRs_BackGColor3"
+            android:fontFamily="@font/vt323"
+            android:hint="@string/TIT_Profit_D"
+            android:textAlignment="center"
+            android:textColor="@color/TRs_BtnTxtColor"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="@string/TIT_Profit_D" />
+
+        <TextView
+            android:id="@+id/tvprofitbaa"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/TRs_BackGColor2"
+            android:fontFamily="@font/vt323"
+            android:hint="@string/TIT_Profit_T"
+            android:textAlignment="center"
+            android:textColor="@color/TRs_BtnTxtColor"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="@string/TIT_Profit_T" />
+
+        <TextView
+            android:id="@+id/tvdailypercbaa"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/TRs_BackGColor3"
+            android:fontFamily="@font/vt323"
+            android:hint="@string/TIT_DailyPerc"
+            android:textAlignment="center"
+            android:textColor="@color/TRs_BtnTxtColor"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="@string/TIT_DailyPerc" />
+
+        <TextView
+            android:id="@+id/tvtotalpercbaa"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/TRs_BackGColor2"
+            android:fontFamily="@font/vt323"
+            android:hint="@string/TIT_TotalPerc"
+            android:textAlignment="center"
+            android:textColor="@color/TRs_BtnTxtColor"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="@string/TIT_TotalPerc" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

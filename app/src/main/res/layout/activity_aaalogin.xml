@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screenaaa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AAAconstcolor"
+    tools:context=".AAAloginActivity">
+
+    <ImageView
+        android:id="@+id/ivbackgroundaaa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/hexabackgbh" />
+
+    <TextView
+        android:id="@+id/tvdateaaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/vt323"
+        android:hint="09 December 2022"
+        android:textAlignment="textStart"
+        android:textColor="@color/TRs_BtnTxtColor"
+        android:textColorHint="@color/TRs_BtnTxtColor"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/etemail"
+        app:layout_constraintEnd_toEndOf="@+id/etemail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etemail"
+        tools:text="@string/TV_Date01" />
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@color/TRs_BackGColor1"
+        android:ems="10"
+        android:fontFamily="@font/vt323"
+        android:hint="@string/ET_Email"
+        android:inputType="textEmailAddress"
+        android:lineSpacingExtra="10sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/TRs_BackGColor2"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivbackgroundaaa"
+        app:layout_constraintEnd_toEndOf="@+id/ivbackgroundaaa"
+        app:layout_constraintStart_toStartOf="@+id/ivbackgroundaaa"
+        app:layout_constraintTop_toTopOf="@+id/ivbackgroundaaa"
+        app:layout_constraintVertical_bias="0.191" />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/TRs_BackGColor1"
+        android:ems="10"
+        android:fontFamily="@font/vt323"
+        android:hint="@string/ET_Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/TRs_BackGColor2"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="@+id/etemail"
+        app:layout_constraintStart_toStartOf="@+id/etemail"
+        app:layout_constraintTop_toBottomOf="@+id/etemail" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/TRs_BackGColor1"
+        android:fontFamily="@font/vt323"
+        android:text="@string/BTN_Login"
+        android:textAlignment="center"
+        android:textColor="@color/TRs_BtnTxtColor"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/etpassword"
+        app:layout_constraintStart_toStartOf="@+id/etpassword"
+        app:layout_constraintTop_toBottomOf="@+id/etpassword"
+        app:rippleColor="@color/oldtext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

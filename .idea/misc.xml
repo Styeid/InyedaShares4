@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/000_Habibies_000/01_BramPi/02_AS_ProjectS/zv_InyedaShares4/app/src/main/res/layout/activity_aaalogin.xml" value="0.20863616930312098" />
+        <entry key="..\:/000_Habibies_000/01_BramPi/02_AS_ProjectS/zv_InyedaShares4/app/src/main/res/layout/activity_aalogin.xml" value="0.4" />
+        <entry key="..\:/000_Habibies_000/01_BramPi/02_AS_ProjectS/zv_InyedaShares4/app/src/main/res/layout/activity_baahomepage.xml" value="0.20863616930312098" />
+        <entry key="..\:/000_Habibies_000/01_BramPi/02_AS_ProjectS/zv_InyedaShares4/app/src/main/res/layout/activity_bahomepage.xml" value="0.20863616930312098" />
+        <entry key="..\:/000_Habibies_000/01_BramPi/02_AS_ProjectS/zv_InyedaShares4/app/src/main/res/layout/activity_bbaactivity.xml" value="0.20863616930312098" />
+        <entry key="..\:/000_Habibies_000/01_BramPi/02_AS_ProjectS/zv_InyedaShares4/app/src/main/res/layout/activity_login.xml" value="0.4" />
+        <entry key="..\:/000_Habibies_000/01_BramPi/02_AS_ProjectS/zv_InyedaShares4/app/src/main/res/layout/item_aa_datablock_tot.xml" value="0.38125" />
+        <entry key="..\:/000_Habibies_000/01_BramPi/02_AS_ProjectS/zv_InyedaShares4/app/src/main/res/layout/item_aatotalsumdata.xml" value="0.20863616930312098" />
+        <entry key="..\:/000_Habibies_000/01_BramPi/02_AS_ProjectS/zv_InyedaShares4/app/src/main/res/layout/item_ab_datablock.xml" value="0.20778110303548525" />
+        <entry key="..\:/000_Habibies_000/01_BramPi/02_AS_ProjectS/zv_InyedaShares4/app/src/main/res/layout/item_ab_datablock_fir.xml" value="0.38125" />
+        <entry key="..\:/000_Habibies_000/01_BramPi/02_AS_ProjectS/zv_InyedaShares4/app/src/main/res/layout/item_baa_datablock_tot.xml" value="0.20863616930312098" />
+        <entry key="..\:/000_Habibies_000/01_BramPi/02_AS_ProjectS/zv_InyedaShares4/app/src/main/res/layout/item_bba_datablock_fir.xml" value="0.20863616930312098" />
+        <entry key="..\:/000_Habibies_000/01_BramPi/02_AS_ProjectS/zv_InyedaShares4/app/src/main/res/layout/item_totalsumdata.xml" value="0.38915470494417864" />
+        <entry key="..\:/000_Habibies_000/01_BramPi/02_AS_ProjectS/zv_InyedaShares4/app/src/main/res/menu/menu_bahomepage.xml" value="0.20863616930312098" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

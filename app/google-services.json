@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "634725442536",
+    "project_id": "inyedashares",
+    "storage_bucket": "inyedashares.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634725442536:android:df394a79ccafd97537fa5d",
+        "android_client_info": {
+          "package_name": "com.jufaja.inyedashares"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "634725442536-1ojishtf95emddkunbepjav4kbciv7qm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTJn5Q1udg1DY_SsgUcfXR5NqDDsSsauY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "634725442536-1ojishtf95emddkunbepjav4kbciv7qm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
