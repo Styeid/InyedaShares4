@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="TRs_BtnTxtColor">#B4FFFFFF</color>
+    <color name="TRs_BtnTxtColor2">#4dFFFFFF</color>
     <color name="TRs_Total">#00FFFFFF</color>
     <color name="TRs_BackGColor1">#56474747</color>
     <color name="TRs_BackGColor2">#34474747</color>

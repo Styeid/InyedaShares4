@@ -4,139 +4,145 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="1dp"
+    android:layout_margin="0dp"
     app:cardBackgroundColor="@color/TRs_Total">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        android:layout_weight="1"
-        android:background="@color/TRs_Total"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/tvdatebba"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="27dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
             android:background="@color/BBAtranscolor"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvdatebba"
-                android:layout_width="match_parent"
-                android:layout_height="27dp"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="@color/TRs_BackGColor2"
-                android:fontFamily="@font/vt323"
-                android:hint="@string/TIT_Date"
-                android:textAlignment="center"
-                android:textColor="@color/TRs_BtnTxtColor"
-                android:textSize="16sp"
-                tools:text="@string/TIT_Date" />
-
-            <TextView
-                android:id="@+id/tvvaluebba"
-                android:layout_width="match_parent"
-                android:layout_height="27dp"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="@color/TRs_BackGColor2"
-                android:fontFamily="@font/vt323"
-                android:hint="@string/TIT_Value"
-                android:textAlignment="center"
-                android:textColor="@color/TRs_BtnTxtColor"
-                android:textSize="16sp"
-                tools:text="@string/TIT_Value" />
-
-            <TextView
-                android:id="@+id/tvcoursebba"
-                android:layout_width="match_parent"
-                android:layout_height="27dp"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="@color/TRs_BackGColor2"
-                android:fontFamily="@font/vt323"
-                android:hint="@string/TIT_Date"
-                android:textAlignment="center"
-                android:textColor="@color/TRs_BtnTxtColor"
-                android:textSize="16sp"
-                tools:text="@string/TIT_Date" />
-
-        </LinearLayout>
+            android:fontFamily="@font/vt323"
+            android:hint="@string/TIT_Date"
+            android:textAlignment="center"
+            android:textColor="@color/TRs_BtnTxtColor"
+            android:textSize="16sp"
+            tools:text="@string/TIT_Date" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/TRs_Total"
+            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tvprofitdbba"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_margin="1dp"
-                android:layout_weight="2"
-                android:background="@color/TRs_BackGColor4"
-                android:fontFamily="@font/vt323"
-                android:hint="@string/TIT_Profit_D"
-                android:textAlignment="center"
-                android:textColor="@color/TRs_BtnTxtColor"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                tools:text="@string/TIT_Profit_D" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/BBAtranscolor"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tvprofitbba"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_margin="1dp"
-                android:layout_weight="2"
-                android:background="@color/TRs_BackGColor2"
-                android:fontFamily="@font/vt323"
-                android:hint="@string/TIT_Profit_T"
-                android:textAlignment="center"
-                android:textColor="@color/TRs_BtnTxtColor"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                tools:text="@string/TIT_Profit_T" />
+                <TextView
+                    android:id="@+id/tvvaluebba"
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/TRs_BackGColor2"
+                    android:fontFamily="@font/vt323"
+                    android:hint="@string/TIT_Value"
+                    android:textAlignment="center"
+                    android:textColor="@color/TRs_BtnTxtColor"
+                    android:textSize="16sp"
+                    tools:text="@string/TIT_Value" />
+
+                <TextView
+                    android:id="@+id/tvcoursebba"
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/TRs_BackGColor2"
+                    android:fontFamily="@font/vt323"
+                    android:hint="@string/TIT_Date"
+                    android:textAlignment="center"
+                    android:textColor="@color/TRs_BtnTxtColor"
+                    android:textSize="16sp"
+                    tools:text="@string/TIT_Date" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvprofitdbba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="2"
+                    android:background="@color/TRs_BackGColor4"
+                    android:fontFamily="@font/vt323"
+                    android:hint="@string/TIT_Profit_D"
+                    android:textAlignment="center"
+                    android:textColor="@color/TRs_BtnTxtColor"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="@string/TIT_Profit_D" />
+
+                <TextView
+                    android:id="@+id/tvprofitbba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="2"
+                    android:background="@color/TRs_BackGColor2"
+                    android:fontFamily="@font/vt323"
+                    android:hint="@string/TIT_Profit_T"
+                    android:textAlignment="center"
+                    android:textColor="@color/TRs_BtnTxtColor"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="@string/TIT_Profit_T" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvdailypercbba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="2"
+                    android:background="@color/TRs_BackGColor4"
+                    android:fontFamily="@font/vt323"
+                    android:hint="@string/TIT_DailyPerc"
+                    android:textAlignment="center"
+                    android:textColor="@color/TRs_BtnTxtColor"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="@string/TIT_DailyPerc" />
+
+                <TextView
+                    android:id="@+id/tvtotalpercbba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="2"
+                    android:background="@color/TRs_BackGColor2"
+                    android:fontFamily="@font/vt323"
+                    android:hint="@string/TIT_TotalPerc"
+                    android:textAlignment="center"
+                    android:textColor="@color/TRs_BtnTxtColor"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="@string/TIT_TotalPerc" />
+            </LinearLayout>
+
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvdailypercbba"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_margin="1dp"
-                android:layout_weight="2"
-                android:background="@color/TRs_BackGColor4"
-                android:fontFamily="@font/vt323"
-                android:hint="@string/TIT_DailyPerc"
-                android:textAlignment="center"
-                android:textColor="@color/TRs_BtnTxtColor"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                tools:text="@string/TIT_DailyPerc" />
-
-            <TextView
-                android:id="@+id/tvtotalpercbba"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_margin="1dp"
-                android:layout_weight="2"
-                android:background="@color/TRs_BackGColor2"
-                android:fontFamily="@font/vt323"
-                android:hint="@string/TIT_TotalPerc"
-                android:textAlignment="center"
-                android:textColor="@color/TRs_BtnTxtColor"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                tools:text="@string/TIT_TotalPerc" />
-        </LinearLayout>
-
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

@@ -14,38 +14,60 @@
         android:layout_height="match_parent"
         android:layout_margin="3dp"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/hexabackgbh"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="-430dp" />
-
-    <TextView
-        android:id="@+id/tvuserbba"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        android:fontFamily="@font/vt323"
-        android:textColor="@color/TRs_BtnTxtColor"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout"
-        tools:text="@string/TV_Username" />
-
-    <TextView
-        android:id="@+id/tvtodaybba"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        android:fontFamily="@font/vt323"
-        android:textAlignment="textEnd"
-        android:textColor="@color/TRs_BtnTxtColor"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="@string/TV_Date01" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hexabackgbh" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvuserbba"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@color/BBAtranscolor"
+            android:fontFamily="@font/vt323"
+            android:textAlignment="center"
+            android:textColor="@color/TRs_BtnTxtColor"
+            android:textSize="24sp"
+            tools:text="@string/TV_Username" />
+
+        <TextView
+            android:id="@+id/tvnamezbba"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/BBAtranscolor"
+            android:fontFamily="@font/vt323"
+            android:hint="@string/TIT_Name"
+            android:textAlignment="center"
+            android:textColor="@color/TRs_BtnTxtColor"
+            android:textColorHint="@color/TRs_BtnTxtColor"
+            android:textSize="24sp"
+            tools:text="@string/TIT_Name" />
+
+        <TextView
+            android:id="@+id/tvtodaybba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@color/BBAtranscolor"
+            android:fontFamily="@font/vt323"
+            android:textAlignment="center"
+            android:textColor="@color/TRs_BtnTxtColor"
+            android:textSize="24sp"
+            tools:text="@string/TV_Date01" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -54,6 +76,7 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
@@ -61,7 +84,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvbba"
             android:layout_width="wrap_content"
-            android:layout_height="500dp"
+            android:layout_height="650dp"
             android:layout_margin="7dp"
             android:background="@color/TRs_Total">
 
@@ -75,20 +98,6 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvnamezbba"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="3dp"
-                android:background="@color/BBAtranscolor"
-                android:fontFamily="@font/vt323"
-                android:hint="@string/TIT_Name"
-                android:textAlignment="center"
-                android:textColor="@color/TRs_BtnTxtColor"
-                android:textColorHint="@color/TRs_BtnTxtColor"
-                android:textSize="24sp"
-                tools:text="@string/TIT_Name" />
-
-            <TextView
                 android:id="@+id/tvinlayzbba"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -99,7 +108,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/TRs_BtnTxtColor"
                 android:textColorHint="@color/TRs_BtnTxtColor"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:text="@string/TIT_Inlay" />
 
             <TextView
@@ -113,7 +122,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/TRs_BtnTxtColor"
                 android:textColorHint="@color/TRs_BtnTxtColor"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:text="@string/TIT_Course" />
 
             <TextView
@@ -127,8 +136,22 @@
                 android:textAlignment="center"
                 android:textColor="@color/TRs_BtnTxtColor"
                 android:textColorHint="@color/TRs_BtnTxtColor"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:text="@string/TIT_Partys" />
+
+            <TextView
+                android:id="@+id/tvvaluezbba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@color/BBAtranscolor"
+                android:fontFamily="@font/vt323"
+                android:hint="@string/TIT_CurrentValue"
+                android:textAlignment="center"
+                android:textColor="@color/TRs_BtnTxtColor"
+                android:textColorHint="@color/TRs_BtnTxtColor"
+                android:textSize="20sp"
+                tools:text="@string/TIT_CurrentValue" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -137,19 +160,22 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/etnamezbba4"
+                    android:id="@+id/etnamezbba"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="3dp"
+                    android:autofillHints=""
                     android:background="@color/TRs_BackGColor3"
+                    android:clickable="false"
                     android:ems="10"
+                    android:enabled="false"
                     android:fontFamily="@font/vt323"
                     android:hint="@string/TIT_CName"
                     android:inputType="textPersonName"
                     android:textAlignment="center"
                     android:textColor="@color/TRs_BtnTxtColor"
-                    android:textColorHint="@color/TRs_BtnTxtColor"
-                    android:textSize="24sp"
+                    android:textColorHint="@color/TRs_BtnTxtColor2"
+                    android:textSize="20sp"
                     tools:text="@string/TIT_CName" />
 
                 <EditText
@@ -157,48 +183,60 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="3dp"
+                    android:autofillHints=""
                     android:background="@color/TRs_BackGColor3"
+                    android:clickable="true"
                     android:ems="10"
+                    android:enabled="false"
                     android:fontFamily="@font/vt323"
                     android:hint="@string/TIT_CInlay"
                     android:inputType="textPersonName"
                     android:textAlignment="center"
                     android:textColor="@color/TRs_BtnTxtColor"
-                    android:textColorHint="@color/TRs_BtnTxtColor"
-                    android:textSize="24sp"
-                    tools:text="@string/TIT_CInlay" />
+                    android:textColorHint="@color/TRs_BtnTxtColor2"
+                    android:textSize="20sp"
+                    tools:text="@string/TIT_CInlay"
+                    android:focusable="true" />
 
                 <EditText
                     android:id="@+id/etcoursezbba"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="3dp"
+                    android:autofillHints=""
                     android:background="@color/TRs_BackGColor3"
+                    android:clickable="true"
                     android:ems="10"
+                    android:enabled="false"
                     android:fontFamily="@font/vt323"
                     android:hint="@string/TIT_CCourse"
                     android:inputType="textPersonName"
                     android:textAlignment="center"
                     android:textColor="@color/TRs_BtnTxtColor"
-                    android:textColorHint="@color/TRs_BtnTxtColor"
-                    android:textSize="24sp"
-                    tools:text="@string/TIT_CCourse" />
+                    android:textColorHint="@color/TRs_BtnTxtColor2"
+                    android:textSize="20sp"
+                    tools:text="@string/TIT_CCourse"
+                    android:focusable="true" />
 
                 <EditText
                     android:id="@+id/etpartyzbba"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="3dp"
+                    android:autofillHints=""
                     android:background="@color/TRs_BackGColor3"
+                    android:clickable="true"
                     android:ems="10"
+                    android:enabled="false"
                     android:fontFamily="@font/vt323"
                     android:hint="@string/TIT_CPartys"
                     android:inputType="textPersonName"
                     android:textAlignment="center"
                     android:textColor="@color/TRs_BtnTxtColor"
-                    android:textColorHint="@color/TRs_BtnTxtColor"
-                    android:textSize="24sp"
-                    tools:text="@string/TIT_CPartys" />
+                    android:textColorHint="@color/TRs_BtnTxtColor2"
+                    android:textSize="20sp"
+                    tools:text="@string/TIT_CPartys"
+                    android:focusable="true" />
             </LinearLayout>
 
             <TextView
@@ -212,11 +250,11 @@
                 android:textAlignment="center"
                 android:textColor="@color/TRs_BtnTxtColor"
                 android:textColorHint="@color/TRs_BtnTxtColor"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:text="@string/TIT_Multigrow" />
 
             <TextView
-                android:id="@+id/tvvaluezbba2"
+                android:id="@+id/tvmultiperczbba"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="3dp"
@@ -226,11 +264,11 @@
                 android:textAlignment="center"
                 android:textColor="@color/TRs_BtnTxtColor"
                 android:textColorHint="@color/TRs_BtnTxtColor"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:text="@string/TIT_Multiperc" />
 
             <TextView
-                android:id="@+id/tvinlayzbba2"
+                android:id="@+id/tvtotalgrowzbba"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="3dp"
@@ -240,11 +278,11 @@
                 android:textAlignment="center"
                 android:textColor="@color/TRs_BtnTxtColor"
                 android:textColorHint="@color/TRs_BtnTxtColor"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:text="@string/TIT_Totalgrow" />
 
             <TextView
-                android:id="@+id/tvnamezbba3"
+                android:id="@+id/tvtotalperczbba"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="3dp"
@@ -254,10 +292,29 @@
                 android:textAlignment="center"
                 android:textColor="@color/TRs_BtnTxtColor"
                 android:textColorHint="@color/TRs_BtnTxtColor"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:text="@string/TIT_Totalperc" />
+
+            <Button
+                android:id="@+id/btnrecalbba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TODOString" />
 
         </LinearLayout>
     </LinearLayout>
+
+    <Switch
+        android:id="@+id/swcalactivatebba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/TRs_BtnTxtColor"
+        android:thumbTint="@color/TRs_BtnTxtColor"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        tools:text="Calc."
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

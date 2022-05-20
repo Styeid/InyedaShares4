@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">InYeDa</string>
+    <string name="TODOString">#test#</string>
     <!--AAAloginActivity-->
     <string name="ET_Email">Email</string>
     <string name="ET_Password">Password</string>
@@ -19,15 +20,16 @@
     <string name="TIT_Name">Name</string>
     <string name="TIT_Inlay">Inlay</string>
     <string name="TIT_Course">Course</string>
+    <string name="TIT_CurrentValue">Value</string>
     <string name="TIT_Partys">Partys</string>
     <string name="TIT_Multigrow">Multigrow</string>
     <string name="TIT_Multiperc">Multiperc</string>
     <string name="TIT_Totalgrow">Totalgrow</string>
     <string name="TIT_Totalperc">Totalperc</string>
-    <string name="TIT_CName">Change Name</string>
-    <string name="TIT_CInlay">Change inlay</string>
-    <string name="TIT_CCourse">Change course</string>
-    <string name="TIT_CPartys">Change partys</string>
+    <string name="TIT_CName">Name</string>
+    <string name="TIT_CInlay">Inlay</string>
+    <string name="TIT_CCourse">Course</string>
+    <string name="TIT_CPartys">Partys</string>
     <string name="TIT_CMount">Mount</string>
     <!--Toolbar_Options-->
     <string name="TIT_BAA">BAA</string>
