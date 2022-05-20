@@ -84,9 +84,10 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvbba"
             android:layout_width="wrap_content"
-            android:layout_height="650dp"
+            android:layout_height="634dp"
             android:layout_margin="7dp"
-            android:background="@color/TRs_Total">
+            android:background="@color/TRs_Total"
+            android:visibility="visible">
 
         </androidx.recyclerview.widget.RecyclerView>
 
@@ -96,6 +97,45 @@
             android:layout_margin="13dp"
             android:layout_marginBottom="444dp"
             android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/TRs_BackGColor4"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="298dp"
+                tools:layout_editor_absoluteY="842dp">
+
+                <TextView
+                    android:id="@+id/tvvaluebbaold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/TRs_BackGColor5"
+                    android:fontFamily="@font/vt323"
+                    android:textAlignment="center"
+                    android:textColor="@color/TRs_BtnTxtColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:text="@string/DUM_Valueold" />
+
+                <TextView
+                    android:id="@+id/tvdummybbaold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/TRs_BackGColor5"
+                    android:fontFamily="@font/vt323"
+                    android:textAlignment="center"
+                    android:textColor="@color/TRs_BtnTxtColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:text="@string/TODOString" />
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/tvinlayzbba"
@@ -188,6 +228,7 @@
                     android:clickable="true"
                     android:ems="10"
                     android:enabled="false"
+                    android:focusable="true"
                     android:fontFamily="@font/vt323"
                     android:hint="@string/TIT_CInlay"
                     android:inputType="textPersonName"
@@ -195,8 +236,7 @@
                     android:textColor="@color/TRs_BtnTxtColor"
                     android:textColorHint="@color/TRs_BtnTxtColor2"
                     android:textSize="20sp"
-                    tools:text="@string/TIT_CInlay"
-                    android:focusable="true" />
+                    tools:text="@string/TIT_CInlay" />
 
                 <EditText
                     android:id="@+id/etcoursezbba"
@@ -208,6 +248,7 @@
                     android:clickable="true"
                     android:ems="10"
                     android:enabled="false"
+                    android:focusable="true"
                     android:fontFamily="@font/vt323"
                     android:hint="@string/TIT_CCourse"
                     android:inputType="textPersonName"
@@ -215,8 +256,7 @@
                     android:textColor="@color/TRs_BtnTxtColor"
                     android:textColorHint="@color/TRs_BtnTxtColor2"
                     android:textSize="20sp"
-                    tools:text="@string/TIT_CCourse"
-                    android:focusable="true" />
+                    tools:text="@string/TIT_CCourse" />
 
                 <EditText
                     android:id="@+id/etpartyzbba"
@@ -228,6 +268,7 @@
                     android:clickable="true"
                     android:ems="10"
                     android:enabled="false"
+                    android:focusable="true"
                     android:fontFamily="@font/vt323"
                     android:hint="@string/TIT_CPartys"
                     android:inputType="textPersonName"
@@ -235,8 +276,7 @@
                     android:textColor="@color/TRs_BtnTxtColor"
                     android:textColorHint="@color/TRs_BtnTxtColor2"
                     android:textSize="20sp"
-                    tools:text="@string/TIT_CPartys"
-                    android:focusable="true" />
+                    tools:text="@string/TIT_CPartys" />
             </LinearLayout>
 
             <TextView
@@ -314,7 +354,7 @@
         app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/linearLayout2"
-        tools:text="Calc."
-        tools:ignore="UseSwitchCompatOrMaterialXml" />
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        tools:text="Calc." />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

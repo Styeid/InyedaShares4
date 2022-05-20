@@ -125,8 +125,8 @@ open class BAAHomepageActivity : AppCompatActivity() {
             }
         }
     }
-    open fun oldDataDystrybutor(number: Int, TvA: Any, TvB: Any, TvC: Any, TvD: Any, TvE: Any,
-                                TvF: Any, TvG: Any, TvH: Any, TvI: Any
+    open fun dataDystrybutor(number: Int, TvA: Any, TvB: Any, TvC: Any, TvD: Any, TvE: Any,
+                             TvF: Any, TvG: Any, TvH: Any, TvI: Any
                                 ) = CoroutineScope(IO).launch {
         val dataQuer1 = datafundsCollectionRef
             .whereEqualTo("numberz", number)
@@ -181,6 +181,62 @@ open class BAAHomepageActivity : AppCompatActivity() {
             }
         }
     }
+    open fun oldDataDystrybutor(number: Int, TvD: Any/*, TvB: Any, TvC: Any, TvD: Any, TvE: Any,
+                             TvF: Any, TvG: Any, TvH: Any, TvI: Any*/
+    ) = CoroutineScope(IO).launch {
+        val dataQuer1 = datafundsCollectionRef
+            .whereEqualTo("numberz", number)
+            .get()
+            .await()
+        if (dataQuer1.documents.isNotEmpty()) {
+            for (data in dataQuer1) {
+                val dataBlok1 = datafundsCollectionRef.document(data.id)
+                //val name = findViewById<TextView>(TvA as Int)
+                //val inlay = findViewById<TextView>(TvB as Int)
+                //val course = findViewById<TextView>(TvC as Int)
+                val value = findViewById<TextView>(TvD as Int)
+                //val partys = findViewById<TextView>(TvE as Int)
+                //val multiGrow = findViewById<TextView>(TvF as Int)
+                //val multiPerc = findViewById<TextView>(TvG as Int)
+                //val totalGrow = findViewById<TextView>(TvH as Int)
+                //val totalPerc = findViewById<TextView>(TvI as Int)
+                try {
+                    dataBlok1.get()
+                        .addOnSuccessListener { document ->
+                            if (document != null) {
+                                //name.hint = document.getString("namez")
+                                //inlay.hint = document.getString("inlay")/* No z added */
+                                //course.hint = document.getString("valuez")/* =course */
+                                value.text = document.getString("totalfundz")/* = valuez */
+                                //partys.hint = document.getString("partysz")
+                                //multiGrow.hint = document.getString("multigrowz")
+                                //multiPerc.hint = document.getString("multipercz")
+                                //totalGrow.hint = document.getString("totalgrowz")
+                                //totalPerc.hint = document.getString("totalpercz")
+                            } else {
+                                Toast.makeText(
+                                    this@BAAHomepageActivity,
+                                    "-1-Error: No Data", Toast.LENGTH_SHORT
+                                ).show()
+                            }
+                        }
+                        .addOnFailureListener {
+                            Toast.makeText(
+                                this@BAAHomepageActivity,
+                                "-2-Error: Fetching failure", Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                } catch (e: Exception) {
+                    withContext(Dispatchers.Main) {
+                        Toast.makeText(
+                            this@BAAHomepageActivity, e.message, Toast.LENGTH_LONG
+                        ).show()
+                        Log.i(TAG, "-3-Error: Fetching DATA")
+                    }
+                }
+            }
+        }
+    }
     open fun changeValue(RecalValue: Any, ValueX: Any) {
         val recalValue = findViewById<EditText>(RecalValue as Int)
         val valueX = findViewById<TextView>(ValueX as Int)
@@ -190,25 +246,25 @@ open class BAAHomepageActivity : AppCompatActivity() {
             Toast.makeText(this, "Button is Disabled", Toast.LENGTH_SHORT).show()
         }
     }
-    open fun caluValueBBA(Unit: String, CourseBBA0: TextView, PartyBBA1: TextView, FactorizeBBA: TextView)
+    open fun caluValueBBA(Unit: String, CourseA0: TextView, PartyA1: TextView, FactorizeA3: TextView)
                             : Map<String, Any> {
         //Calculating_ValueBBA//
         ///Course///
-        val dataBBA0 = CourseBBA0.text.toString()
-        val dataBBA1 = CourseBBA0.hint.toString()
+        val dataA0 = CourseA0.text.toString()
+        val dataA1 = CourseA0.hint.toString()
         ///Partys///
-        val dataBBA2 = PartyBBA1.text.toString()
-        val dataBBA3 = PartyBBA1.hint.toString()
+        val dataA2 = PartyA1.text.toString()
+        val dataA3 = PartyA1.hint.toString()
         val caluMap0 = mutableMapOf<String, Any>()
-        if (dataBBA0.isNotEmpty()) {
-            caluMap0["Course$Unit"] = dataBBA0
+        if (dataA0.isNotEmpty()) {
+            caluMap0["Course$Unit"] = dataA0
         } else {
-            caluMap0["Course$Unit"] = dataBBA1
+            caluMap0["Course$Unit"] = dataA1
         }
-        if (dataBBA2.isNotEmpty()) {
-            caluMap0["Partys$Unit"] = dataBBA2
+        if (dataA2.isNotEmpty()) {
+            caluMap0["Partys$Unit"] = dataA2
         } else {
-            caluMap0["Partys$Unit"] = dataBBA3
+            caluMap0["Partys$Unit"] = dataA3
         }
         val keyX0: String? = caluMap0["Course$Unit"] as String?
         val keyY0: String? = caluMap0["Partys$Unit"] as String?
@@ -216,23 +272,61 @@ open class BAAHomepageActivity : AppCompatActivity() {
             if (keyY0 != null) {
                 val kapO = (keyX0.toDouble() * keyY0.toDouble())
                 val kapFactorizeO = "%.2f".format(kapO)
-                ///asTotalFund///
-                FactorizeBBA.text = kapFactorizeO
+                ///Value///
+                FactorizeA3.text = kapFactorizeO
                 if (kapFactorizeO.isNotEmpty()) {
                     caluMap0["Value$Unit"] = kapFactorizeO
                 } else {
                     Log.i(TAG, "#\n Value= $kapFactorizeO(INVALID)")
                 }
             } else {
-                Log.i(TAG, "#\n Partys= $dataBBA0(INVALID)")
+                Log.i(TAG, "#\n Partys= $dataA0(INVALID)")
             }
         } else {
-            Log.i(TAG, "#\n Course= $dataBBA2(INVALID)")
+            Log.i(TAG, "#\n Course= $dataA2(INVALID)")
         }
         for (entertedInFields in caluMap0) {
             Log.i(TAG, "caluMap0--> $entertedInFields")
         }
         return caluMap0
+    }
+    open fun caluMultiGrow(Unit: String, ValueoldA0: TextView, ValueA1: TextView, FactorizeA3: TextView)
+                            : Map<String, Any> {
+        //Calculating_MultigrowBBA//
+        ///Valueold///
+        val dataA0 = ValueoldA0.text.toString()
+        ///value///
+        val dataA1 = ValueA1.text.toString()
+        val caluMap1 = mutableMapOf<String, Any>()
+        if (dataA0.isNotEmpty()) {
+            caluMap1["Valueold$Unit"] = dataA0
+        }
+        if (dataA1.isNotEmpty()) {
+            caluMap1["Value$Unit"] = dataA1
+        }
+        val keyX0: String? = caluMap1["Valueold$Unit"] as String?
+        val keyY0: String? = caluMap1["Value$Unit"] as String?
+        if (keyX0 != null) {
+            if (keyY0 != null) {
+                val kapO = (keyX0.toDouble() - keyY0.toDouble())
+                val kapFactorizeO = "%.2f".format(kapO)
+                ///Multigrow///
+                FactorizeA3.text = kapFactorizeO
+                if (kapFactorizeO.isNotEmpty()) {
+                    caluMap1["Value$Unit"] = kapFactorizeO
+                } else {
+                    Log.i(TAG, "#\n Multigrow= $kapFactorizeO(INVALID)")
+                }
+            } else {
+                Log.i(TAG, "#\n Value= $dataA0(INVALID)")
+            }
+        } else {
+            Log.i(TAG, "#\n Valueold= $dataA1(INVALID)")
+        }
+        for (entertedInFields in caluMap1) {
+            Log.i(TAG, "caluMap1--> $entertedInFields")
+        }
+        return caluMap1
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_bahomepage, menu)

@@ -31,6 +31,7 @@
     <string name="TIT_CCourse">Course</string>
     <string name="TIT_CPartys">Partys</string>
     <string name="TIT_CMount">Mount</string>
+    <string name="DUM_Valueold">Valueold</string>
     <!--Toolbar_Options-->
     <string name="TIT_BAA">BAA</string>
     <string name="TIT_BBA">BBA</string>
